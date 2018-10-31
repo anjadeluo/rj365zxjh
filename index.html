@@ -11,14 +11,28 @@
     <link href="files/index/styles.css" type="text/css" rel="stylesheet"/>
     <script src="resources/scripts/jquery-1.7.1.min.js"></script>
     <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <!--<script src="resources/scripts/jquery.min.js"></script>-->
     <script src="resources/scripts/prototypePre.js"></script>
     <script src="data/document.js"></script>
     <script src="resources/scripts/prototypePost.js"></script>
     <script src="files/index/data.js"></script>
+    <!--<script src="data/ClassModel.js"></script>-->
+    <!--<script src="data/dbdataIO.js"></script>-->
+    <script src="data/xmlDocumentIO.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+
+      var obj = {
+          id: "1",
+          name: "yangyixiang",
+          sex: "男",
+          price: "365",
+          date: "2018-10-20"
+      }
+//      insertData(obj);
+      startInsert(obj);
     </script>
   </head>
   <body>
