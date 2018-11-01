@@ -1,6 +1,7 @@
 var xmlHttp;
-var requestType = "";
+var inputObj = {};
 var xmlFile = "contributions.xml";
+var contributions;
 
 function createXMLHttpRequest() {
     if (window.ActiveXObject) {
@@ -11,15 +12,16 @@ function createXMLHttpRequest() {
     }
 }
 
-function startInsert(inputObj) {
+function startInsert(obj) {
     createXMLHttpRequest();
+    inputObj = obj;
     xmlHttp.open("GET", xmlFile, true);
-    xmlHttp.onreadystatechange = handleStateChange(inputObj);
+    xmlHttp.onreadystatechange = handleStateChange;
     xmlHttp.send(null);
 }
 
 
-function handleStateChange(inputObj) {
+function handleStateChange() {
     if (xmlHttp.readyState == 4) {
         if (xmlHttp.status == 200) {
             var xmlDoc = xmlHttp.responseXML;
@@ -54,7 +56,13 @@ function handleStateChange(inputObj) {
                 contributions = xmlDoc.documentElement;
                 contributions.appendChild(contribution);
             }
-            xmlDoc.save(xmlFile);
+            xmlDoc.writable;
+            // xmlHttp
+            // contributions.save(xmlFile)
+            // xmlDoc.save(xmlFile);
+            // xmlDoc.save()
+            // xmlDoc.close();
+            // xmlDoc.ex
         }
     }
 }
