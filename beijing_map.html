@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="static/jquery/jquery.min.js"></script>
+    <script src="static/echarts/echarts.min.js"></script>
+    <script src="static/mapData/rongjiang.js"></script>
+</head>
+
+<script type="text/javascript">
+    /*$(function(){
+        var mapChart;
+        var option;
+        $.get('static/mapData/guizhou.json', function (guizhouJson) {
+            echarts.registerMap('贵州', guizhouJson);
+            mapChart = echarts.init(document.getElementById('map-wrap'));
+            option = {
+                title:{
+                    text: '北京市通州区各镇分布图',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}<br/>{c} (个)'
+                },
+                toolbox: {
+                    show: true,
+                    orient: 'vertical',
+                    left: 'right',
+                    top: 'center',
+                    feature: {
+                        dataView: {readOnly: false},
+                        restore: {},
+                        saveAsImage: {}
+                    }
+                },
+                series:[
+                    {
+                        name: '通州区各镇安装机井统计图',
+                        type: 'map',
+                        map: '贵州', // 自定义扩展图表类型
+                        aspectScale: 1.0, //长宽比. default: 0.75
+                        zoom: 1.1,
+                        roam: true,
+                        itemStyle:{
+                            normal:{label:{show:true}},
+                            emphasis:{label:{show:true}}
+                        }
+                    }
+                ]
+            }
+            mapChart.setOption(option);
+        });
+    })*/
+
+</script>
+
+<body>
+    <div id="map-wrap" style="height: 500px;"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echarts 地图添加自定义区域</title>
+    <script></script>
+    <script src="static/jquery/jquery.min.js"></script>
+    <script src="static/echarts/echarts.min.js"></script>
+    <script src="static/mapData/rongjiang.js"></script>
+    <script src="static/mapData/beijing.js"></script>
+</head>
+<body>
+<div id="map" style="width: 800px;height: 500px;"></div>
+<div id="map-wrap" style="width: 800px;height: 500px;"></div>
+</body>
+<script>
+    /*var map = {
+        init : function () {
+            map.getMapData();
+        },
+
+        getMapData : function () {
+            $.getJSON("static/mapData/guizhou.json", function (data) {
+                if(data != null) {
+                    echarts.registerMap("贵州", data);// 注册地图
+                    var mapData = [];
+                    var features = data.features;
+                    $.each(features, function(i, item) {
+                        mapData.push({id : i+1, name: item.properties.name});
+                    })
+                    map.renderMap(mapData);
+                }
+            })
+        },
+
+        renderMap : function (data) {
+            var chart =  echarts.init(document.getElementById("map"));
+            var option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}'
+                },
+                series: [
+                    {
+                        name: '贵州',
+                        type: 'map',
+                        mapType: 'guizhou',
+                        selectedMode : 'multiple',
+                        label: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: true
+                            }
+                        },
+                        data : data
+                    }
+                ]
+            }
+            chart.setOption(option);
+        }
+    }
+*/
+    /*$(function () {
+//        map.init();
+        $.getJSON("static/mapData/guizhou.json", function (data) {
+            if(data != null) {
+                echarts.registerMap("贵州", data);// 注册地图
+                /!*var mapData = [];
+                var features = data.features;
+                $.each(features, function(i, item) {
+                    mapData.push({id : i+1, name: item.properties.name});
+                })*!/
+                var chart = echarts.init(document.getElementById("map"));
+                chart.setOption(rongjiang_option);
+            }
+        })
+//        var chart = echarts.init(document.getElementById("map"));
+//        chart.setOption(rongjiang_option);
+    })*/
+</script>
+</html>
