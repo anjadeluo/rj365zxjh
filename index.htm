@@ -71,16 +71,16 @@
 <SCRIPT src="static/AC_RunActiveContent.js" type="text/javascript"></SCRIPT>
 <SCRIPT src="static/jquery/jquery.min.js" type="text/javascript"></SCRIPT>
 <script>
-    $(document).ready(function () {
-        $('#configHead').load('header.html');
-//        $("#contentFrame").style({height: })
+    $(function () {
+        $(".fontstyle1507").on("click", function(){
+            $("#contentFrame").attr("src", $(this).attr("url"));
+        });
     });
 </script>
 <TABLE width="1004" id="header" align="center" border="0" cellspacing="0" cellpadding="0">
     <TBODY>
     <TR>
         <TD>
-            <!--#begineditable contype="" name="banner" action="" layout="" clone="0" namechanged="0" order="2" ispublic="0" tagname="banner" viewid="39707" contentviewid="" stylesysid=""-->
             <SCRIPT language="javascript" src="static/dynclicks.js"></SCRIPT>
             <TABLE border="0" cellspacing="0" cellpadding="0">
                 <TBODY>
@@ -89,7 +89,8 @@
                              border="0" vspace="0" hspace="0"></TD>
                 </TR>
                 </TBODY>
-            </TABLE><!--#endeditable--></TD>
+            </TABLE>
+        </TD>
     </TR>
     </TBODY>
 </TABLE>
@@ -184,14 +185,14 @@
                     <TD valign="center"></TD>
                     <TD width="0" height="0" align="center" class="b1_3_" id="a_3_1495"
                         nowrap="" valign="middle" onMouseOver="tshowLayers('1495','b2_3_', '_3_')"
-                        onmouseout="thideLayers('1495','b1_3_', '_3_','true','true')"><A
-                            class="menu0_3_" href="index.htm"><SPAN
+                        onmouseout="thideLayers('1495','b1_3_', '_3_','true','true')">
+                        <A class="menu0_3_" url="index.htm" href="javascript:void(0);"><SPAN
                             class="fontstyle1507">&nbsp;首页&nbsp;</SPAN></A></TD>
                     <TD class="leaderfont1507" valign="center">|</TD>
                     <TD width="0" align="center" class="b1_3_" id="a_3_1730" nowrap=""
                         valign="middle" onMouseOver="tshowLayers('1730','b2_3_', '_3_')"
                         onmouseout="thideLayers('1730','b1_3_', '_3_','true','true')"><A
-                            class="menu0_3_" href="https://mp.weixin.qq.com/s/5zIEfYj8Ryn_mwhTrysFIw"><SPAN
+                            class="menu0_3_" href="javascript:void(0);" url="https://mp.weixin.qq.com/s/5zIEfYj8Ryn_mwhTrysFIw"><SPAN
                             class="fontstyle1507">&nbsp;关于我们&nbsp;</SPAN></A></TD>
                     <TD class="leaderfont1507" valign="center">|</TD>
                     <TD width="0" align="center" class="b1_3_" id="a_3_1673" nowrap=""
@@ -227,7 +228,7 @@
 <TABLE width="1004" id="footer" align="center" border="0" cellspacing="0" cellpadding="0">
     <TBODY>
     <TR>
-        <TD height="106" align="center" background="static/i_r51_c4.jpg">
+        <TD height="50" align="center" background="static/i_r51_c4.jpg">
             <P style="text-align: center;"><SPAN style="font-size: 14px;">
                 版权所有：榕江365助学计划理事会&nbsp;&nbsp;
                 邮编：557200&nbsp;&nbsp;
